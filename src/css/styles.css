@@ -506,9 +506,10 @@ a {
 }
 
 .bento-card__text {
-    color: var(--text-muted);
+    color: var(--text-main);
     font-size: 15px;
     line-height: 1.5;
+  
 }
 
 .bento-card__icon {
@@ -1350,5 +1351,119 @@ a {
 
     .btn--hide-mobile {
         display: none;
+    }
+}
+/* --- Стилизация юридических страниц --- */
+
+.pages {
+    padding: 160px 0 100px;
+    /* Отступ сверху под фиксированный хедер */
+    background: var(--bg-main);
+    min-height: 80vh;
+}
+
+.pages .container {
+    max-width: 850px;
+    /* Сужаем контейнер для читабельности текста */
+    background: white;
+    padding: 60px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.03);
+}
+
+/* Заголовки */
+.pages h1 {
+    font-size: clamp(32px, 5vw, 42px);
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    margin-bottom: 30px;
+    color: var(--text-main);
+    line-height: 1.1;
+}
+
+.pages h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 40px 0 20px;
+    color: var(--text-main);
+    letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Декоративный элемент перед H2 (опционально, в стиле AI) */
+.pages h2::before {
+    content: '';
+    width: 4px;
+    height: 24px;
+    background: var(--accent);
+    border-radius: 2px;
+}
+
+/* Текстовые блоки */
+.pages p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+.pages strong {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+/* Списки */
+.pages ul,
+.pages ol {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.pages li {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    position: relative;
+}
+
+/* Кастомные буллиты для списков */
+.pages ul li::marker {
+    color: var(--accent);
+    font-size: 1.2em;
+}
+
+/* Ссылки внутри текста */
+.pages a {
+    color: var(--accent);
+    font-weight: 600;
+    border-bottom: 1px solid rgba(0, 98, 255, 0.2);
+    transition: var(--transition);
+}
+
+.pages a:hover {
+    border-bottom-color: var(--accent);
+    background: rgba(0, 98, 255, 0.05);
+}
+
+/* Адаптивность для мобилок */
+@media (max-width: 768px) {
+    .pages {
+        padding: 120px 0 60px;
+    }
+
+    .pages .container {
+        padding: 30px 20px;
+        border-radius: 0;
+        border: none;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .pages h1 {
+        font-size: 20px;
     }
 }
