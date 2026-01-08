@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kyniq-Ova — AI для реальных задач</title>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230062FF%22/><circle cx=%2250%22 cy=%2250%22 r=%2215%22 fill=%22white%22/><path d=%22M50 20 L50 35 M50 65 L50 80 M20 50 L35 50 M65 50 L80 50%22 stroke=%22white%22 stroke-width=%228%22 stroke-linecap=%22round%22/></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <script type="module" crossorigin src="/kyniq-ova/assets/main-DH3MG5cp.js"></script>
+  <link rel="stylesheet" crossorigin href="/kyniq-ova/assets/main-BPp_yGdb.css">
+</head>
+  <body>
+    <header class="header">
+  <div class="container header__container">
+    <a href="./#hero" class="logo">
+      <span class="logo__icon"></span>
+      <span class="logo__text">Kyniq-Ova</span>
+    </a>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li><a href="./#hero" class="nav__link">Главная</a></li>
+        <li><a href="./#about" class="nav__link">О платформе</a></li>
+        <li><a href="./#benefits" class="nav__link">Преимущества</a></li>
+        <li><a href="./#innovations" class="nav__link">Инновации</a></li>
+        <li><a href="./#blog" class="nav__link">Практика</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <a href="./#contact" class="btn btn--primary btn--hide-mobile">Связаться</a>
+      <button class="burger" id="burger-menu" aria-label="Открыть меню">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <div class="container mobile-menu__container">
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__list">
+        <li class="mobile-nav__item"><a href="./#hero" class="mobile-nav__link"><span>01</span> Главная</a></li>
+        <li class="mobile-nav__item"><a href="./#about" class="mobile-nav__link"><span>02</span> О платформе</a></li>
+        <li class="mobile-nav__item"><a href="./#benefits" class="mobile-nav__link"><span>03</span> Преимущества</a></li>
+        <li class="mobile-nav__item"><a href="./#innovations" class="mobile-nav__link"><span>04</span> Инновации</a></li>
+        <li class="mobile-nav__item"><a href="./#blog" class="mobile-nav__link"><span>05</span> Практика</a></li>
+        <li class="mobile-nav__item"><a href="./#contact" class="mobile-nav__link mobile-nav__link--cta">Запросить
+            доступ</a></li>
+      </ul>
+    </nav>
+
+    <div class="mobile-menu__footer">
+      <p>Milano, Italy</p>
+      <a href="mailto:support@kyniq-ova.fit">support@kyniq-ova.fit</a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="pages">
+    <div class="container">
+      <h1>Отказ от ответственности (Дисклеймер)</h1>
+
+      <p>
+        <strong>Общая информация:</strong> Все материалы, практические примеры и
+        сведения, опубликованные на сайте <strong>Kyniq-Ova</strong>, носят
+        исключительно информационно-ознакомительный и образовательный характер.
+        Они не являются и не должны рассматриваться как профессиональные
+        технические рекомендации, юридические консультации или призыв к
+        обязательному совершению каких-либо действий.
+      </p>
+
+      <p>
+        <strong>Отсутствие гарантий:</strong> Мы стремимся предоставлять
+        актуальные данные, однако не даем никаких гарантий относительно
+        абсолютной точности, полноты или актуальности представленной информации
+        о работе нейросетей и сторонних AI-сервисов. Любые примеры эффективности
+        технологий (экономия времени, рост продуктивности) основаны на частных
+        кейсах и не гарантируют аналогичных результатов для каждого
+        пользователя. Результаты использования ИИ во многом зависят от
+        индивидуальных навыков и специфики вводимых данных.
+      </p>
+
+      <p>
+        <strong>Ограничение ответственности:</strong> Администрация платформы
+        Kyniq-Ova, её владельцы и аффилированные лица не несут ответственности
+        за любые прямые или косвенные убытки, потерю данных или решения,
+        предпринятые вами на основе информации с этого ресурса. Вся
+        ответственность за применение изученных методик и возможные последствия
+        (включая взаимодействие со сторонним программным обеспечением) лежит
+        исключительно на пользователе.
+      </p>
+
+      <p>
+        <strong>Предупреждение о технологических рисках:</strong> Сфера
+        искусственного интеллекта развивается стремительно. Алгоритмы сторонних
+        сервисов могут меняться без уведомления, что может привести к изменению
+        результатов работы инструментов, описанных на нашем сайте. Мы
+        настоятельно рекомендуем проверять критически важные данные,
+        сгенерированные ИИ, перед их использованием в профессиональной или
+        коммерческой деятельности.
+      </p>
+
+      <p>
+        <strong>Подтверждение пользователя:</strong> Используя данный сайт, вы
+        подтверждаете, что действуете по собственной воле, полностью осознаете и
+        принимаете тот факт, что технологии ИИ являются вспомогательным
+        инструментом, а ответственность за финальный результат их применения в
+        вашей жизни или бизнесе остается на вас. Продолжая использование
+        платформы, вы подтверждаете свое согласие с условиями данного отказа от
+        ответственности.
+      </p>
+
+      <p>
+        Если у вас возникли вопросы по содержанию данного документа, вы можете
+        связаться с нами:
+        <a href="mailto:support@kyniq-ova.fit">support@kyniq-ova.fit</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+    <footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__col footer__col--brand">
+      <a href="./#hero" class="logo footer__logo">
+        <span class="logo__icon"></span>
+        <span class="logo__text">Kyniq-Ova</span>
+      </a>
+      <p class="footer__description">
+        Технологии, которые работают на вас. Пошаговый путь к освоению AI, понятный каждому.
+      </p>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Меню</h4>
+      <ul class="footer__list">
+        <li><a href="./#hero">Главная</a></li>
+        <li><a href="./#about">О платформе</a></li>
+        <li><a href="./#benefits">Преимущества</a></li>
+        <li><a href="./#innovations">Инновации</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Юридические данные</h4>
+      <ul class="footer__list">
+        <li><a href="./privacy.html">Конфиденциальность</a></li>
+        <li><a href="./terms.html">Условия использования</a></li>
+        <li><a href="./cookies.html">Cookies</a></li>
+        <li><a href="./personal-data-policy.html">Персональные данные</a></li>
+        <li><a href="./disclaimer.html">Отказ от ответственности</a></li>
+        <li><a href="./return.html">Возврат средств</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Контакты</h4>
+      <ul class="footer__contacts">
+        <li>
+          <i data-lucide="map-pin"></i>
+          <span>Via Dante, 14, 20121 Milano MI, Italy</span>
+        </li>
+        <li>
+          <i data-lucide="phone"></i>
+          <span>+39 02 8646 3221</span>
+        </li>
+        <li>
+          <i data-lucide="mail"></i>
+          <a href="mailto:support@kyniq-ova.fit">support@kyniq-ova.fit</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom container">
+    <p>&copy; 2026 Kyniq-Ova. Платформа года. Все права защищены.</p>
+  </div>
+</footer>
+    <div class="cookie-popup" id="cookie-popup">
+      <div class="cookie-popup__content">
+        <i data-lucide="cookie"></i>
+        <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie
+            политике</a>.</p>
+        <div class="cookie-popup__actions">
+          <button class="btn btn--secondary btn--sm" id="cookie-reject">Отклонить</button>
+          <button class="btn btn--primary btn--sm" id="cookie-accept">Принять</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    </body>
+    
+    </html>
